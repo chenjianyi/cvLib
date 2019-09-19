@@ -1,4 +1,6 @@
-!!!Note: The cvLib is under devoloping. 
+!!! Note: The cvLib is under devoloping. 
+          We always welcome contributions to help make cvLib better. If you would like to contribute, please concat me.
+          Mabay just a advice, it would help me a lot.
 
 CVLib is an object detection toolbox based on Pytorch. Generally, we divide an object detection algorithm into two parts: backbone and head. Backbone is a feature extractor, maybe multi-scale features. Usually, Backbone network may conbine with a FPN block to enhance the features. Head is focusing on object detection algorithm itself. Head contains targets builder, loss, decoder and so on. It's very convenient to build a new algorithm just picking a backbone from our modules.net and picking a head from our heads. We also packed many useful blocks, all of which are in our modules.basic, modules.block, modules.module, so it will be so convenient and so quickly to use, such as building a new backbone network. We also provide some series alrorithms in our experiments, such as Cornetnet-Lite, SSD-Lite, Yolo-Lite.
 
@@ -18,12 +20,13 @@ So, It's very convenient to build a new algorithm just picking a backbone from o
 <p align="center">
     <img src="./material/yolov3.jpg" width="640"\>
 </p>
+But please remain it in mind, to make a algorithm works better, many experiments should be tried, for example, better data augumentation, better pretrain-model, better learning rate schedule, better dataset, and so on. So in the architecture diagram, there is a `Application` layer above `Algorithms` layer. Unfortunately, we dont't provide pretrained model explicitly evenly on COCO dataset, and it'll take me so much time. But I have demonstrated the experiments provided in `experiments` could work and convergert well on Pascal VOC dataset.
 
 ## Usage
 - Dependencies:
     - python >= 3.5
     - torch >= 1.0
-    - cv2
+    - opencv-python
 - Compile ops:
 ```
     cd modules/ops/_cpools

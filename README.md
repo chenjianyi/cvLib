@@ -32,10 +32,10 @@ So, It's very convenient to build a new algorithm just picking a backbone from o
 
 ## Algorithms
 - SSD-Lite
-    - refering to [experiments/ssd/README.txt](./experiments/ssd/README.txt)
+    - refering to [experiments/ssd/README.md](./experiments/ssd/README.md)
 
 - Yolo-Lite
-    - refering to [experiments/yolo/README.txt](./experiments/yolo/README.txt)
+    - refering to [experiments/yolo/README.md](./experiments/yolo/README.md)
 
 - Cornetnet-Lite (keypoint for object-detection)
     - remain developing
